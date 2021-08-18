@@ -8,4 +8,6 @@ export default defineConfig({
     { path: '/', component: '@/pages/index' },
   ],
   fastRefresh: {},
+  base: '/todos/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/todos/' : '/',
 });
